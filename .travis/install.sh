@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+
 if [ "$TRAVIS_OS_NAME" == "osx" ]; then
   brew update >/dev/null
   [ -z $( brew tap | grep 'homebrew/science' ) ] && brew tap homebrew/science
